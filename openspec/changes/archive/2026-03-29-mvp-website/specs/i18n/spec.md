@@ -1,4 +1,4 @@
-## Requirements
+## MODIFIED Requirements
 
 ### Requirement: next-intl configuration
 
@@ -31,6 +31,8 @@ The app SHALL include `src/i18n/request.ts` that configures `next-intl` to load 
 #### Scenario: Request config loads Polish messages for /pl routes
 - **WHEN** a request is processed for the `/pl` locale
 - **THEN** `next-intl` provides Polish translations via its context
+
+## ADDED Requirements
 
 ### Requirement: next-intl middleware
 The app SHALL include a `src/middleware.ts` file that configures next-intl routing middleware. It SHALL define the supported locales and default locale, and handle locale-based redirects.

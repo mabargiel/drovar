@@ -1,0 +1,27 @@
+import { useTranslations } from "next-intl";
+import Container from "@/components/ui/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
+import RealizationCard from "@/components/realizations/RealizationCard";
+import { realizations } from "@/lib/data/realizations";
+
+export default function RealizationsPage() {
+  const t = useTranslations("realizations");
+
+  return (
+    <section className="pt-28 pb-20 lg:pb-28">
+      <Container>
+        <SectionHeading
+          title={t("pageTitle")}
+          subtitle={t("pageSubtitle")}
+          centered
+        />
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {realizations.map((realization) => (
+            <RealizationCard key={realization.id} realization={realization} />
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}

@@ -2,5 +2,164 @@
   "metadata": {
     "title": "Drovar — wyposażenie sklepów",
     "description": "Projektujemy i produkujemy nowoczesne wyposażenie sklepów. Realizujemy projekty od koncepcji po transport i profesjonalny montaż."
+  },
+  "nav": {
+    "offer": "Oferta",
+    "realizations": "Realizacje",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "language": "PL",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu"
+  },
+  "hero": {
+    "title": "Wyposażenie sklepów",
+    "keywords": "projekt · produkcja · montaż",
+    "subtitle": "Zaprojektujemy i wykonamy wyposażenie Twojego sklepu — od pierwszej koncepcji po gotową przestrzeń sprzedażową.",
+    "ctaPrimary": "Zobacz realizacje",
+    "ctaSecondary": "Skontaktuj się"
+  },
+  "offer": {
+    "title": "Co robimy",
+    "subtitle": "Specjalizujemy się w produkcji wyposażenia sklepów i przestrzeni handlowych.",
+    "shelves": {
+      "title": "Regały sklepowe",
+      "description": "Funkcjonalne regały dostosowane do asortymentu i przestrzeni sklepu."
+    },
+    "counters": {
+      "title": "Lady sprzedażowe",
+      "description": "Ergonomiczne lady kasowe i sprzedażowe dopasowane do potrzeb obsługi."
+    },
+    "displays": {
+      "title": "Moduły ekspozycyjne",
+      "description": "Atrakcyjne moduły do prezentacji produktów i promocji."
+    },
+    "wallUnits": {
+      "title": "Zabudowy ścienne",
+      "description": "Zabudowy ścienne maksymalizujące wykorzystanie dostępnej przestrzeni."
+    },
+    "convenience": {
+      "title": "Sklepy convenience",
+      "description": "Kompletne wyposażenie sklepów typu convenience i małych formatów."
+    },
+    "tobacco": {
+      "title": "Sklepy tytoniowe",
+      "description": "Specjalistyczne wyposażenie sklepów tytoniowych i punktów sprzedaży."
+    }
+  },
+  "forWho": {
+    "title": "Dla kogo pracujemy",
+    "singleShops": {
+      "title": "Dla pojedynczych sklepów",
+      "description": "Dopasowanie do lokalu, szybka wycena, pełna obsługa od projektu po montaż."
+    },
+    "chains": {
+      "title": "Dla sieci handlowych",
+      "description": "Standaryzacja, powtarzalność, logistyka i montaże w wielu lokalizacjach jednocześnie."
+    }
+  },
+  "whyUs": {
+    "title": "Dlaczego warto z nami współpracować",
+    "experience": {
+      "title": "Doświadczenie międzynarodowe",
+      "description": "Realizacje w Polsce i za granicą na rynkach europejskich."
+    },
+    "fullService": {
+      "title": "Kompleksowa obsługa",
+      "description": "Projekt → produkcja → transport → montaż w jednym miejscu."
+    },
+    "custom": {
+      "title": "Indywidualne rozwiązania",
+      "description": "Dopasowanie do lokalu, asortymentu i charakteru sprzedaży."
+    },
+    "proven": {
+      "title": "Sprawdzony system",
+      "description": "Sprawdzony system produkcji i logistyki zapewniający powtarzalność."
+    },
+    "onTime": {
+      "title": "Terminowa realizacja",
+      "description": "Dotrzymujemy ustalonych terminów dzięki precyzyjnemu planowaniu."
+    }
+  },
+  "realizations": {
+    "title": "Nasze realizacje",
+    "subtitle": "Wybrane projekty sklepów wykonanych w Polsce i za granicą.",
+    "viewAll": "Zobacz wszystkie realizacje",
+    "pageTitle": "Realizacje",
+    "pageSubtitle": "Prezentujemy wybrane projekty sklepów wykonanych w Polsce i za granicą. Każdy projekt dopasowujemy do przestrzeni, potrzeb klienta oraz charakteru sprzedaży."
+  },
+  "projectTypes": {
+    "title": "Realizujemy projekty dla",
+    "convenience": "Sklepy convenience",
+    "tobacco": "Sklepy tytoniowe",
+    "grocery": "Sklepy spożywcze",
+    "pharmacy": "Apteki",
+    "chains": "Sieci handlowe"
+  },
+  "assembly": {
+    "title": "Montaż i transport",
+    "description": "Dysponujemy wyspecjalizowanymi zespołami montażowymi oraz sprawdzonym partnerem logistycznym. Dzięki temu sprawnie realizujemy nawet wymagające projekty — od dostawy po profesjonalny montaż.",
+    "subtitle": "Zapewniamy płynną realizację zgodnie z ustalonym harmonogramem."
+  },
+  "about": {
+    "title": "O nas",
+    "paragraph1": "Specjalizujemy się w produkcji wyposażenia sklepów dostosowanego do indywidualnych potrzeb klientów. Stawiamy na funkcjonalność, estetykę oraz wysoką jakość wykonania.",
+    "paragraph2": "Realizujemy projekty dla małych punktów sprzedażowych oraz dużych powierzchni handlowych — w Polsce i za granicą. Dzięki wieloletniemu doświadczeniu dostarczamy rozwiązania, które pomagają sklepom lepiej działać i sprzedawać."
+  },
+  "partners": {
+    "title": "Nasi partnerzy"
+  },
+  "contactPreview": {
+    "title": "Zainteresowany współpracą?",
+    "description": "Masz pomysł na nowy sklep lub planujesz modernizację istniejącego lokalu? Skontaktuj się z nami — przygotujemy koncepcję i wycenę dopasowaną do Twojego projektu.",
+    "cta": "Skontaktuj się z nami"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Skontaktuj się z nami — przygotujemy koncepcję i wycenę dopasowaną do Twojego projektu.",
+    "info": {
+      "phone": "+48 123 456 789",
+      "email": "kontakt@drovar.pl",
+      "address": "ul. Przykładowa 1, 00-000 Warszawa"
+    },
+    "form": {
+      "name": "Imię",
+      "namePlaceholder": "Twoje imię",
+      "email": "Email",
+      "emailPlaceholder": "twoj@email.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "+48 ...",
+      "country": "Kraj",
+      "countryPlaceholder": "Polska",
+      "shopType": "Typ sklepu",
+      "shopTypePlaceholder": "Wybierz typ sklepu",
+      "shopTypeOptions": {
+        "convenience": "Convenience",
+        "tobacco": "Tytoniowy",
+        "grocery": "Spożywczy",
+        "pharmacy": "Apteka",
+        "chain": "Sieć handlowa",
+        "other": "Inny"
+      },
+      "area": "Powierzchnia sklepu (m²)",
+      "areaPlaceholder": "np. 50",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Opisz swój projekt...",
+      "submit": "Wyślij zapytanie",
+      "success": "Dziękujemy! Twoje zapytanie zostało wysłane.",
+      "validation": {
+        "nameRequired": "Imię jest wymagane",
+        "emailRequired": "Email jest wymagany",
+        "emailInvalid": "Podaj prawidłowy adres email",
+        "messageRequired": "Wiadomość jest wymagana"
+      }
+    }
+  },
+  "footer": {
+    "description": "Projektujemy i produkujemy nowoczesne wyposażenie sklepów.",
+    "navigation": "Nawigacja",
+    "contactTitle": "Kontakt",
+    "partnersTitle": "Partnerzy",
+    "copyright": "© {year} Drovar. Wszelkie prawa zastrzeżone."
   }
 }
