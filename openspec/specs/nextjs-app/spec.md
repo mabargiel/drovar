@@ -12,11 +12,11 @@ The `app/` directory SHALL be a self-contained Next.js 16 project with its own `
 - **THEN** the Next.js development server starts and serves the placeholder page
 
 ### Requirement: Root layout and placeholder page
-The app SHALL include a root layout (`src/app/layout.tsx`) with HTML structure and metadata, and a homepage (`src/app/page.tsx`) with placeholder content.
+The app SHALL include a root layout (`src/app/layout.tsx`) that loads Lato via `next/font/google`, applies the font CSS variable to the body, imports `globals.css`, sets HTML lang to `"pl"`, and wraps children with `NextIntlClientProvider`. The homepage (`src/app/page.tsx`) SHALL remain a placeholder.
 
-#### Scenario: Homepage renders
+#### Scenario: Homepage renders with Lato font and cream background
 - **WHEN** navigating to `/`
-- **THEN** a placeholder page is displayed with valid HTML structure
+- **THEN** a placeholder page is displayed with Lato font, cream background, and `lang="pl"` on the html element
 
 ### Requirement: Tailwind CSS 4 integration
 The app SHALL use Tailwind CSS 4 via `@tailwindcss/postcss` plugin. Global styles SHALL be defined in `src/app/globals.css` with Tailwind imports.
