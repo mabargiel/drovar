@@ -1,0 +1,29 @@
+{
+  "name": "drovar-cms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@sanity/vision": "^3",
+    "sanity": "^3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "styled-components": "^6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "eslint": "^9",
+    "@typescript-eslint/eslint-plugin": "^8",
+    "@typescript-eslint/parser": "^8",
+    "eslint-config-prettier": "^9",
+    "prettier": "^3",
+    "typescript": "^5"
+  }
+}
