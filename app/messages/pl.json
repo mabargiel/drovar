@@ -17,7 +17,18 @@
     "keywords": "projekt · produkcja · montaż",
     "subtitle": "Zaprojektujemy i wykonamy wyposażenie Twojego sklepu — od pierwszej koncepcji po gotową przestrzeń sprzedażową.",
     "ctaPrimary": "Zobacz realizacje",
-    "ctaSecondary": "Skontaktuj się"
+    "ctaSecondary": "Skontaktuj się",
+    "goToSlide": "Przejdź do slajdu {number}",
+    "scrollDown": "Przewiń w dół",
+    "slides": {
+      "0": "Szkic projektowy — wyposażenie sklepu tytoniowego",
+      "1": "Szkic projektowy — regały sklepowe i lada przeszklona",
+      "2": "Szkic projektowy — aranżacja wnętrza baru z ladą i stołkami",
+      "3": "Szkic projektowy — wyposażenie sklepu z ladą i stojakami ekspozycyjnymi",
+      "4": "Szkic projektowy — wnętrze sklepu z gablotami i zabudową ścienną",
+      "5": "Szkic projektowy — sklep convenience z regałami piekarniczymi",
+      "6": "Szkic projektowy — nowoczesne wyposażenie sklepu w ciepłym drewnie"
+    }
   },
   "offer": {
     "title": "Co robimy",
@@ -154,6 +165,13 @@
         "messageRequired": "Wiadomość jest wymagana"
       }
     }
+  },
+  "categories": {
+    "tobacco": "Sklep tytoniowy"
+  },
+  "realizationDetail": {
+    "backToList": "Wróć do realizacji",
+    "gallery": "Galeria"
   },
   "footer": {
     "description": "Projektujemy i produkujemy nowoczesne wyposażenie sklepów.",

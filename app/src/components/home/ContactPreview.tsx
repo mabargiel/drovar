@@ -1,8 +1,9 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
 export default function ContactPreview() {
+  const locale = useLocale();
   const t = useTranslations("contactPreview");
 
   return (
@@ -15,7 +16,7 @@ export default function ContactPreview() {
             {t("description")}
           </p>
           <div className="mt-8">
-            <Button variant="primary" href="/pl/contact">
+            <Button variant="primary" href={`/${locale}/contact`}>
               {t("cta")}
             </Button>
           </div>

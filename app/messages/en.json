@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "title": "Drovar — shop fitting",
+    "description": "We design and manufacture modern shop fittings. We deliver projects from concept through transport to professional installation."
+  },
+  "nav": {
+    "offer": "Services",
+    "realizations": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "language": "EN",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "title": "Shop fitting",
+    "keywords": "design · manufacturing · installation",
+    "subtitle": "We design and build your shop's interior — from initial concept to a ready-to-use retail space.",
+    "ctaPrimary": "View projects",
+    "ctaSecondary": "Get in touch",
+    "goToSlide": "Go to slide {number}",
+    "scrollDown": "Scroll down",
+    "slides": {
+      "0": "Design sketch — tobacco shop fitting",
+      "1": "Design sketch — shop shelving and glazed counter",
+      "2": "Design sketch — bar interior with counter and stools",
+      "3": "Design sketch — shop fitting with counter and display stands",
+      "4": "Design sketch — shop interior with showcases and wall units",
+      "5": "Design sketch — convenience store with bakery shelving",
+      "6": "Design sketch — modern shop fitting in warm wood"
+    }
+  },
+  "offer": {
+    "title": "What we do",
+    "subtitle": "We specialise in manufacturing fittings for shops and retail spaces.",
+    "shelves": { "title": "Shop shelving", "description": "Functional shelving tailored to the product range and shop layout." },
+    "counters": { "title": "Sales counters", "description": "Ergonomic checkout and sales counters designed to meet service needs." },
+    "displays": { "title": "Display modules", "description": "Attractive modules for product presentation and promotions." },
+    "wallUnits": { "title": "Wall units", "description": "Wall units that maximise the use of available space." },
+    "convenience": { "title": "Convenience stores", "description": "Complete fittings for convenience stores and small-format outlets." },
+    "tobacco": { "title": "Tobacco shops", "description": "Specialist fittings for tobacco shops and retail points of sale." }
+  },
+  "forWho": {
+    "title": "Who we work for",
+    "singleShops": { "title": "Individual shops", "description": "Tailored to your premises, quick quotation, full service from design to installation." },
+    "chains": { "title": "Retail chains", "description": "Standardisation, repeatability, logistics and installations across multiple locations simultaneously." }
+  },
+  "whyUs": {
+    "title": "Why work with us",
+    "experience": { "title": "International experience", "description": "Projects delivered in Poland and across European markets." },
+    "fullService": { "title": "Full-service delivery", "description": "Design, manufacturing, transport and installation — all under one roof." },
+    "custom": { "title": "Bespoke solutions", "description": "Tailored to the premises, product range and character of your business." },
+    "proven": { "title": "Proven system", "description": "A tried-and-tested production and logistics system ensuring consistency." },
+    "onTime": { "title": "On-time delivery", "description": "We meet agreed deadlines through precise planning." }
+  },
+  "realizations": {
+    "title": "Our projects",
+    "subtitle": "Selected shop projects completed in Poland and abroad.",
+    "viewAll": "View all projects",
+    "pageTitle": "Projects",
+    "pageSubtitle": "We present selected shop projects completed in Poland and abroad. Every project is tailored to the space, client needs and character of the business."
+  },
+  "projectTypes": {
+    "title": "We deliver projects for",
+    "convenience": "Convenience stores",
+    "tobacco": "Tobacco shops",
+    "grocery": "Grocery stores",
+    "pharmacy": "Pharmacies",
+    "chains": "Retail chains"
+  },
+  "assembly": {
+    "title": "Installation and transport",
+    "description": "We have specialised installation teams and a trusted logistics partner. This allows us to efficiently deliver even the most demanding projects — from delivery to professional installation.",
+    "subtitle": "We ensure smooth execution according to the agreed schedule."
+  },
+  "about": {
+    "title": "About us",
+    "paragraph1": "We specialise in manufacturing shop fittings tailored to individual client needs. We focus on functionality, aesthetics and high build quality.",
+    "paragraph2": "We deliver projects for small retail outlets and large commercial spaces — in Poland and abroad. Thanks to years of experience, we provide solutions that help shops operate and sell more effectively."
+  },
+  "partners": { "title": "Our partners" },
+  "contactPreview": {
+    "title": "Interested in working together?",
+    "description": "Have an idea for a new shop or planning to refurbish an existing one? Get in touch — we will prepare a concept and quotation tailored to your project.",
+    "cta": "Get in touch"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch — we will prepare a concept and quotation tailored to your project.",
+    "info": { "phone": "+48 123 456 789", "email": "kontakt@drovar.pl", "address": "ul. Przykładowa 1, 00-000 Warszawa" },
+    "form": {
+      "name": "Name", "namePlaceholder": "Your name",
+      "email": "Email", "emailPlaceholder": "your@email.com",
+      "phone": "Phone", "phonePlaceholder": "+44 ...",
+      "country": "Country", "countryPlaceholder": "United Kingdom",
+      "shopType": "Shop type", "shopTypePlaceholder": "Select shop type",
+      "shopTypeOptions": { "convenience": "Convenience", "tobacco": "Tobacco", "grocery": "Grocery", "pharmacy": "Pharmacy", "chain": "Retail chain", "other": "Other" },
+      "area": "Shop area (m²)", "areaPlaceholder": "e.g. 50",
+      "message": "Message", "messagePlaceholder": "Describe your project...",
+      "submit": "Send enquiry",
+      "success": "Thank you! Your enquiry has been sent.",
+      "validation": { "nameRequired": "Name is required", "emailRequired": "Email is required", "emailInvalid": "Please enter a valid email address", "messageRequired": "Message is required" }
+    }
+  },
+  "categories": { "tobacco": "Tobacco shop" },
+  "realizationDetail": { "backToList": "Back to projects", "gallery": "Gallery" },
+  "footer": {
+    "description": "We design and manufacture modern shop fittings.",
+    "navigation": "Navigation",
+    "contactTitle": "Contact",
+    "partnersTitle": "Partners",
+    "copyright": "© {year} Drovar. All rights reserved."
+  }
+}

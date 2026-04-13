@@ -1,19 +1,20 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/Container";
 
-const footerLinks = [
-  { label: "Home", href: "/pl" },
-  { key: "realizations", href: "/pl/realizations" },
-  { key: "about", href: "/pl/#about" },
-  { key: "contact", href: "/pl/contact" },
-] as const;
-
 export default function Footer() {
+  const locale = useLocale();
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
   const tContact = useTranslations("contact.info");
+
+  const footerLinks = [
+    { label: "Home", href: `/${locale}` },
+    { key: "realizations", href: `/${locale}/realizations` },
+    { key: "about", href: `/${locale}/#about` },
+    { key: "contact", href: `/${locale}/contact` },
+  ] as const;
 
   return (
     <footer className="bg-primary-dark py-12 text-cream lg:py-16">
@@ -21,7 +22,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link href="/pl" className="relative mb-4 block h-8 w-28">
+            <Link href={`/${locale}`} className="relative mb-4 block h-8 w-28">
               <Image
                 src="/assets/logo.png"
                 alt="Drovar"

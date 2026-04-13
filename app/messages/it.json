@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "title": "Drovar — allestimento negozi",
+    "description": "Progettiamo e produciamo arredi moderni per negozi. Realizziamo progetti dal concept al trasporto e al montaggio professionale."
+  },
+  "nav": {
+    "offer": "Offerta",
+    "realizations": "Realizzazioni",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "language": "IT",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu"
+  },
+  "hero": {
+    "title": "Allestimento negozi",
+    "keywords": "progettazione · produzione · montaggio",
+    "subtitle": "Progettiamo e realizziamo l'allestimento del Suo negozio — dal primo concept allo spazio di vendita completo.",
+    "ctaPrimary": "Scopra le realizzazioni",
+    "ctaSecondary": "Ci contatti",
+    "goToSlide": "Vai alla slide {number}",
+    "scrollDown": "Scorri verso il basso",
+    "slides": {
+      "0": "Bozzetto di progetto — allestimento di una tabaccheria",
+      "1": "Bozzetto di progetto — scaffalature e banco vetrina",
+      "2": "Bozzetto di progetto — arredamento interno di un bar con bancone e sgabelli",
+      "3": "Bozzetto di progetto — allestimento negozio con banco ed espositori",
+      "4": "Bozzetto di progetto — interno di un negozio con vetrine e arredi a parete",
+      "5": "Bozzetto di progetto — negozio convenience con scaffalature per panetteria",
+      "6": "Bozzetto di progetto — allestimento moderno in legno caldo"
+    }
+  },
+  "offer": {
+    "title": "Cosa facciamo",
+    "subtitle": "Siamo specializzati nella produzione di arredi per negozi e spazi commerciali.",
+    "shelves": { "title": "Scaffalature per negozi", "description": "Scaffalature funzionali adattate all'assortimento e allo spazio del negozio." },
+    "counters": { "title": "Banchi vendita", "description": "Banchi cassa e vendita ergonomici, progettati in base alle esigenze operative." },
+    "displays": { "title": "Moduli espositivi", "description": "Moduli attraenti per la presentazione dei prodotti e delle promozioni." },
+    "wallUnits": { "title": "Arredi a parete", "description": "Strutture a parete che massimizzano l'utilizzo dello spazio disponibile." },
+    "convenience": { "title": "Negozi convenience", "description": "Allestimento completo per negozi convenience e piccoli formati." },
+    "tobacco": { "title": "Tabaccherie", "description": "Allestimento specializzato per tabaccherie e punti vendita tabacchi." }
+  },
+  "forWho": {
+    "title": "Per chi lavoriamo",
+    "singleShops": { "title": "Per singoli negozi", "description": "Adattamento al locale, preventivo rapido, servizio completo dal progetto al montaggio." },
+    "chains": { "title": "Per catene commerciali", "description": "Standardizzazione, ripetibilità, logistica e montaggi in più sedi contemporaneamente." }
+  },
+  "whyUs": {
+    "title": "Perché collaborare con noi",
+    "experience": { "title": "Esperienza internazionale", "description": "Realizzazioni in Polonia e all'estero sui mercati europei." },
+    "fullService": { "title": "Servizio completo", "description": "Progettazione → produzione → trasporto → montaggio in un unico interlocutore." },
+    "custom": { "title": "Soluzioni personalizzate", "description": "Adattamento al locale, all'assortimento e al tipo di vendita." },
+    "proven": { "title": "Sistema collaudato", "description": "Un sistema di produzione e logistica collaudato che garantisce ripetibilità." },
+    "onTime": { "title": "Consegna puntuale", "description": "Rispettiamo le scadenze concordate grazie a una pianificazione accurata." }
+  },
+  "realizations": {
+    "title": "Le nostre realizzazioni",
+    "subtitle": "Progetti selezionati di negozi realizzati in Polonia e all'estero.",
+    "viewAll": "Scopra tutte le realizzazioni",
+    "pageTitle": "Realizzazioni",
+    "pageSubtitle": "Presentiamo una selezione di progetti di negozi realizzati in Polonia e all'estero. Ogni progetto viene adattato allo spazio, alle esigenze del cliente e al tipo di vendita."
+  },
+  "projectTypes": {
+    "title": "Realizziamo progetti per",
+    "convenience": "Negozi convenience",
+    "tobacco": "Tabaccherie",
+    "grocery": "Negozi alimentari",
+    "pharmacy": "Farmacie",
+    "chains": "Catene commerciali"
+  },
+  "assembly": {
+    "title": "Montaggio e trasporto",
+    "description": "Disponiamo di squadre di montaggio specializzate e di un partner logistico affidabile. Questo ci consente di gestire in modo efficiente anche i progetti più complessi — dalla consegna al montaggio professionale.",
+    "subtitle": "Garantiamo una realizzazione fluida secondo il cronogramma stabilito."
+  },
+  "about": {
+    "title": "Chi siamo",
+    "paragraph1": "Siamo specializzati nella produzione di arredi per negozi su misura, in base alle esigenze individuali dei clienti. Puntiamo su funzionalità, estetica e alta qualità di realizzazione.",
+    "paragraph2": "Realizziamo progetti per piccoli punti vendita e grandi superfici commerciali — in Polonia e all'estero. Grazie alla pluriennale esperienza, forniamo soluzioni che aiutano i negozi a funzionare meglio e a vendere di più."
+  },
+  "partners": { "title": "I nostri partner" },
+  "contactPreview": {
+    "title": "Interessato a una collaborazione?",
+    "description": "Ha un'idea per un nuovo negozio o sta pianificando la ristrutturazione di un locale esistente? Ci contatti — prepareremo un concept e un preventivo su misura per il Suo progetto.",
+    "cta": "Ci contatti"
+  },
+  "contact": {
+    "title": "Contatti",
+    "subtitle": "Ci contatti — prepareremo un concept e un preventivo su misura per il Suo progetto.",
+    "info": { "phone": "+48 123 456 789", "email": "kontakt@drovar.pl", "address": "ul. Przykładowa 1, 00-000 Warszawa" },
+    "form": {
+      "name": "Nome", "namePlaceholder": "Il Suo nome",
+      "email": "Email", "emailPlaceholder": "la-sua@email.com",
+      "phone": "Telefono", "phonePlaceholder": "+39 ...",
+      "country": "Paese", "countryPlaceholder": "Italia",
+      "shopType": "Tipo di negozio", "shopTypePlaceholder": "Selezioni il tipo di negozio",
+      "shopTypeOptions": { "convenience": "Convenience", "tobacco": "Tabaccheria", "grocery": "Alimentari", "pharmacy": "Farmacia", "chain": "Catena commerciale", "other": "Altro" },
+      "area": "Superficie del negozio (m²)", "areaPlaceholder": "es. 50",
+      "message": "Messaggio", "messagePlaceholder": "Descriva il Suo progetto...",
+      "submit": "Invia richiesta",
+      "success": "Grazie! La Sua richiesta è stata inviata.",
+      "validation": { "nameRequired": "Il nome è obbligatorio", "emailRequired": "L'email è obbligatoria", "emailInvalid": "Inserisca un indirizzo email valido", "messageRequired": "Il messaggio è obbligatorio" }
+    }
+  },
+  "categories": { "tobacco": "Tabaccheria" },
+  "realizationDetail": { "backToList": "Torna alle realizzazioni", "gallery": "Galleria" },
+  "footer": {
+    "description": "Progettiamo e produciamo arredi moderni per negozi.",
+    "navigation": "Navigazione",
+    "contactTitle": "Contatti",
+    "partnersTitle": "Partner",
+    "copyright": "© {year} Drovar. Tutti i diritti riservati."
+  }
+}

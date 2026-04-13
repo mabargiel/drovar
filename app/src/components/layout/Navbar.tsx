@@ -2,33 +2,39 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
-  { label: "Home", href: "/pl", scroll: false },
-  { key: "realizations", href: "/pl/realizations", scroll: false },
-  { key: "about", href: "/#about", scroll: true },
-  { key: "contact", href: "/pl/contact", scroll: false },
-] as const;
+const locales = ["pl", "en", "de", "it"] as const;
 
-function getLinkId(link: (typeof navLinks)[number]) {
+type NavLink =
+  | { label: string; path: string; scroll: false }
+  | { key: string; path: string; scroll: false }
+  | { key: string; path: string; scroll: true };
+
+const navLinks: NavLink[] = [
+  { label: "Home", path: "", scroll: false },
+  { key: "realizations", path: "/realizations", scroll: false },
+  { key: "about", path: "/#about", scroll: true },
+  { key: "contact", path: "/contact", scroll: false },
+];
+
+function getLinkId(link: NavLink) {
   return "label" in link ? link.label : link.key;
 }
 
-function getLinkText(
-  link: (typeof navLinks)[number],
-  t: (key: string) => string,
-) {
+function getLinkText(link: NavLink, t: (key: string) => string) {
   return "label" in link ? link.label : t(link.key);
 }
 
 export default function Navbar() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const pathname = usePathname();
-  const isHome = pathname === "/pl" || pathname === "/pl/";
+  const homePath = `/${locale}`;
+  const isHome = pathname === homePath || pathname === `${homePath}/`;
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -62,48 +68,41 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
-  function isActive(link: (typeof navLinks)[number]) {
-    // Home link — active when on home page and no section is in view (top of page)
-    if ("label" in link) {
-      return isHome && !activeSection;
-    }
-    // Scroll link (about) — active when that section is in view
-    if (link.scroll) {
-      const id = link.href.replace("/#", "");
-      return isHome && activeSection === id;
-    }
-    // Route links — active when pathname matches
-    return pathname === link.href || pathname === `${link.href}/`;
+  function getHref(link: NavLink) {
+    if (link.scroll && isHome) return link.path;
+    if (link.scroll && !isHome) return `/${locale}${link.path}`;
+    return `/${locale}${link.path}`;
   }
 
-  function handleLinkClick(
-    e: React.MouseEvent,
-    link: (typeof navLinks)[number],
-  ) {
+  function isActive(link: NavLink) {
+    if ("label" in link) return isHome && !activeSection;
+    if (link.scroll) {
+      const id = link.path.replace("/#", "");
+      return isHome && activeSection === id;
+    }
+    const href = `/${locale}${link.path}`;
+    return pathname === href || pathname === `${href}/`;
+  }
+
+  function handleLinkClick(e: React.MouseEvent, link: NavLink) {
     setMenuOpen(false);
 
-    // Home link on home page — scroll to top
     if ("label" in link && isHome) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
 
-    // Scroll link on home page
     if (link.scroll && isHome) {
       e.preventDefault();
-      const id = link.href.replace("/#", "");
+      const id = link.path.replace("/#", "");
       const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }
   }
 
-  function resolveHref(link: (typeof navLinks)[number]) {
-    if (link.scroll && isHome) return link.href;
-    if (link.scroll && !isHome) return `/pl/${link.href}`;
-    return link.href;
+  function switchLocalePath(targetLocale: string) {
+    return pathname.replace(`/${locale}`, `/${targetLocale}`);
   }
 
   return (
@@ -113,7 +112,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link href="/pl" className="relative h-8 w-28 shrink-0">
+        <Link href={`/${locale}`} className="relative h-8 w-28 shrink-0">
           <Image
             src="/assets/logo.png"
             alt="Drovar"
@@ -128,7 +127,7 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <li key={getLinkId(link)}>
               <Link
-                href={resolveHref(link)}
+                href={getHref(link)}
                 onClick={(e) => handleLinkClick(e, link)}
                 className={`text-sm font-bold uppercase tracking-wider transition-colors ${
                   isActive(link)
@@ -146,29 +145,33 @@ export default function Navbar() {
           ))}
         </ul>
 
+        {/* Language switcher */}
         <div className="hidden items-center gap-1 text-sm font-bold md:flex">
-          <span className={scrolled ? "text-accent" : "text-cream"}>PL</span>
-          <span className={scrolled ? "text-border" : "text-cream/30"}>|</span>
-          <span
-            className={`cursor-default ${scrolled ? "text-border" : "text-cream/30"}`}
-            title="Coming soon"
-          >
-            EN
-          </span>
-          <span className={scrolled ? "text-border" : "text-cream/30"}>|</span>
-          <span
-            className={`cursor-default ${scrolled ? "text-border" : "text-cream/30"}`}
-            title="Coming soon"
-          >
-            DE
-          </span>
-          <span className={scrolled ? "text-border" : "text-cream/30"}>|</span>
-          <span
-            className={`cursor-default ${scrolled ? "text-border" : "text-cream/30"}`}
-            title="Coming soon"
-          >
-            IT
-          </span>
+          {locales.map((loc, i) => (
+            <span key={loc} className="flex items-center gap-1">
+              {i > 0 && (
+                <span className={scrolled ? "text-border" : "text-cream/30"}>
+                  |
+                </span>
+              )}
+              {loc === locale ? (
+                <span className={scrolled ? "text-accent" : "text-cream"}>
+                  {loc.toUpperCase()}
+                </span>
+              ) : (
+                <Link
+                  href={switchLocalePath(loc)}
+                  className={`transition-colors ${
+                    scrolled
+                      ? "text-primary-light hover:text-accent"
+                      : "text-cream/60 hover:text-cream"
+                  }`}
+                >
+                  {loc.toUpperCase()}
+                </Link>
+              )}
+            </span>
+          ))}
         </div>
 
         {/* Mobile hamburger */}
@@ -191,7 +194,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <li key={getLinkId(link)}>
                 <Link
-                  href={resolveHref(link)}
+                  href={getHref(link)}
                   onClick={(e) => handleLinkClick(e, link)}
                   className={`text-lg font-bold uppercase tracking-wider transition-colors ${
                     isActive(link)

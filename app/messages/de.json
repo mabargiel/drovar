@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "title": "Drovar — Ladeneinrichtung",
+    "description": "Wir entwerfen und produzieren moderne Ladeneinrichtungen. Wir realisieren Projekte vom Konzept bis zum Transport und zur professionellen Montage."
+  },
+  "nav": {
+    "offer": "Angebot",
+    "realizations": "Referenzen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "language": "DE",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "hero": {
+    "title": "Ladeneinrichtung",
+    "keywords": "Entwurf · Produktion · Montage",
+    "subtitle": "Wir entwerfen und fertigen die Einrichtung Ihres Geschäfts — vom ersten Konzept bis zum verkaufsfertigen Raum.",
+    "ctaPrimary": "Referenzen ansehen",
+    "ctaSecondary": "Kontakt aufnehmen",
+    "goToSlide": "Zum Slide {number}",
+    "scrollDown": "Nach unten scrollen",
+    "slides": {
+      "0": "Entwurfsskizze — Einrichtung eines Tabakgeschäfts",
+      "1": "Entwurfsskizze — Ladenregale und verglaste Theke",
+      "2": "Entwurfsskizze — Innenraumgestaltung einer Bar mit Theke und Hockern",
+      "3": "Entwurfsskizze — Ladeneinrichtung mit Theke und Displayständern",
+      "4": "Entwurfsskizze — Geschäftsinnenraum mit Vitrinen und Wandverbau",
+      "5": "Entwurfsskizze — Convenience-Store mit Bäckereiregalen",
+      "6": "Entwurfsskizze — moderne Ladeneinrichtung in warmem Holz"
+    }
+  },
+  "offer": {
+    "title": "Was wir tun",
+    "subtitle": "Wir sind auf die Produktion von Ladeneinrichtungen und Ausstattungen für Verkaufsflächen spezialisiert.",
+    "shelves": {
+      "title": "Ladenregale",
+      "description": "Funktionale Regale, abgestimmt auf das Sortiment und die Fläche Ihres Geschäfts."
+    },
+    "counters": {
+      "title": "Verkaufstheken",
+      "description": "Ergonomische Kassen- und Verkaufstheken, angepasst an die Anforderungen des Personals."
+    },
+    "displays": {
+      "title": "Präsentationsmodule",
+      "description": "Attraktive Module zur Produktpräsentation und Verkaufsförderung."
+    },
+    "wallUnits": {
+      "title": "Wandeinbauten",
+      "description": "Wandeinbauten zur maximalen Nutzung der verfügbaren Fläche."
+    },
+    "convenience": {
+      "title": "Convenience-Stores",
+      "description": "Komplette Einrichtung für Convenience-Stores und kleinere Verkaufsformate."
+    },
+    "tobacco": {
+      "title": "Tabakgeschäfte",
+      "description": "Spezialeinrichtungen für Tabakgeschäfte und Verkaufsstellen."
+    }
+  },
+  "forWho": {
+    "title": "Für wen wir arbeiten",
+    "singleShops": {
+      "title": "Für einzelne Geschäfte",
+      "description": "Anpassung an die Räumlichkeiten, schnelle Angebotserstellung, Komplettservice vom Entwurf bis zur Montage."
+    },
+    "chains": {
+      "title": "Für Handelsketten",
+      "description": "Standardisierung, Reproduzierbarkeit, Logistik und Montage an mehreren Standorten gleichzeitig."
+    }
+  },
+  "whyUs": {
+    "title": "Warum Sie mit uns zusammenarbeiten sollten",
+    "experience": {
+      "title": "Internationale Erfahrung",
+      "description": "Projekte in Polen und im europäischen Ausland."
+    },
+    "fullService": {
+      "title": "Komplettservice",
+      "description": "Entwurf → Produktion → Transport → Montage aus einer Hand."
+    },
+    "custom": {
+      "title": "Individuelle Lösungen",
+      "description": "Anpassung an die Räumlichkeiten, das Sortiment und den Charakter des Geschäfts."
+    },
+    "proven": {
+      "title": "Bewährtes System",
+      "description": "Ein bewährtes Produktions- und Logistiksystem, das Reproduzierbarkeit gewährleistet."
+    },
+    "onTime": {
+      "title": "Termingerechte Umsetzung",
+      "description": "Dank präziser Planung halten wir die vereinbarten Termine ein."
+    }
+  },
+  "realizations": {
+    "title": "Unsere Referenzen",
+    "subtitle": "Ausgewählte Ladenprojekte, die wir in Polen und im Ausland realisiert haben.",
+    "viewAll": "Alle Referenzen ansehen",
+    "pageTitle": "Referenzen",
+    "pageSubtitle": "Wir präsentieren ausgewählte Ladenprojekte, die wir in Polen und im Ausland realisiert haben. Jedes Projekt wird individuell auf die Räumlichkeiten, die Kundenbedürfnisse und den Charakter des Geschäfts abgestimmt."
+  },
+  "projectTypes": {
+    "title": "Wir realisieren Projekte für",
+    "convenience": "Convenience-Stores",
+    "tobacco": "Tabakgeschäfte",
+    "grocery": "Lebensmittelgeschäfte",
+    "pharmacy": "Apotheken",
+    "chains": "Handelsketten"
+  },
+  "assembly": {
+    "title": "Montage und Transport",
+    "description": "Wir verfügen über spezialisierte Montageteams und einen bewährten Logistikpartner. Dadurch setzen wir selbst anspruchsvolle Projekte reibungslos um — von der Lieferung bis zur professionellen Montage.",
+    "subtitle": "Wir gewährleisten eine reibungslose Umsetzung gemäß dem vereinbarten Zeitplan."
+  },
+  "about": {
+    "title": "Über uns",
+    "paragraph1": "Wir sind auf die Produktion von Ladeneinrichtungen spezialisiert, die individuell auf die Bedürfnisse unserer Kunden zugeschnitten werden. Dabei setzen wir auf Funktionalität, Ästhetik und höchste Verarbeitungsqualität.",
+    "paragraph2": "Wir realisieren Projekte für kleine Verkaufsstellen und große Einzelhandelsflächen — in Polen und im Ausland. Dank unserer langjährigen Erfahrung liefern wir Lösungen, die Geschäften helfen, besser zu funktionieren und mehr zu verkaufen."
+  },
+  "partners": {
+    "title": "Unsere Partner"
+  },
+  "contactPreview": {
+    "title": "Interesse an einer Zusammenarbeit?",
+    "description": "Planen Sie ein neues Geschäft oder die Modernisierung bestehender Räumlichkeiten? Kontaktieren Sie uns — wir erstellen ein Konzept und ein auf Ihr Projekt abgestimmtes Angebot.",
+    "cta": "Kontaktieren Sie uns"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns — wir erstellen ein Konzept und ein auf Ihr Projekt abgestimmtes Angebot.",
+    "info": {
+      "phone": "+48 123 456 789",
+      "email": "kontakt@drovar.pl",
+      "address": "ul. Przykładowa 1, 00-000 Warszawa"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre@email.de",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 ...",
+      "country": "Land",
+      "countryPlaceholder": "Deutschland",
+      "shopType": "Geschäftstyp",
+      "shopTypePlaceholder": "Geschäftstyp auswählen",
+      "shopTypeOptions": {
+        "convenience": "Convenience",
+        "tobacco": "Tabakgeschäft",
+        "grocery": "Lebensmittelgeschäft",
+        "pharmacy": "Apotheke",
+        "chain": "Handelskette",
+        "other": "Sonstiges"
+      },
+      "area": "Geschäftsfläche (m²)",
+      "areaPlaceholder": "z. B. 50",
+      "message": "Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Projekt...",
+      "submit": "Anfrage senden",
+      "success": "Vielen Dank! Ihre Anfrage wurde gesendet.",
+      "validation": {
+        "nameRequired": "Name ist erforderlich",
+        "emailRequired": "E-Mail ist erforderlich",
+        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "messageRequired": "Nachricht ist erforderlich"
+      }
+    }
+  },
+  "categories": {
+    "tobacco": "Tabakgeschäft"
+  },
+  "realizationDetail": {
+    "backToList": "Zurück zu den Referenzen",
+    "gallery": "Galerie"
+  },
+  "footer": {
+    "description": "Wir entwerfen und produzieren moderne Ladeneinrichtungen.",
+    "navigation": "Navigation",
+    "contactTitle": "Kontakt",
+    "partnersTitle": "Partner",
+    "copyright": "© {year} Drovar. Alle Rechte vorbehalten."
+  }
+}

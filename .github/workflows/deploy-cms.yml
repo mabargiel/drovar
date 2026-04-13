@@ -1,0 +1,38 @@
+name: Deploy Sanity Studio
+
+on:
+  push:
+    branches: [main]
+    paths: [cms/**]
+
+jobs:
+  deploy:
+    name: Deploy to Sanity
+    runs-on: ubuntu-latest
+    environment: production
+    defaults:
+      run:
+        working-directory: cms
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: cms/package-lock.json
+
+      - run: npm ci
+
+      - name: Build Studio
+        run: npx sanity build
+        env:
+          SANITY_STUDIO_PROJECT_ID: ${{ secrets.SANITY_STUDIO_PROJECT_ID }}
+          SANITY_STUDIO_DATASET: ${{ secrets.SANITY_STUDIO_DATASET }}
+
+      - name: Deploy to Sanity
+        run: npx sanity deploy --no-build
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+          SANITY_STUDIO_PROJECT_ID: ${{ secrets.SANITY_STUDIO_PROJECT_ID }}
+          SANITY_STUDIO_DATASET: ${{ secrets.SANITY_STUDIO_DATASET }}

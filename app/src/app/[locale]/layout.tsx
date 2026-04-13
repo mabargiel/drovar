@@ -28,7 +28,9 @@ type LayoutProps = {
 export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as "pl")) {
+  if (
+    !routing.locales.includes(locale as (typeof routing.locales)[number])
+  ) {
     notFound();
   }
 
