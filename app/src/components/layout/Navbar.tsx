@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -112,13 +111,11 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link href={`/${locale}`} className="relative h-8 w-28 shrink-0">
-          <Image
-            src="/assets/logo.png"
+        <Link href={`/${locale}`} className="shrink-0">
+          <img
+            src={scrolled ? "/assets/logo.svg" : "/assets/logo-light.svg"}
             alt="Drovar"
-            fill
-            className="object-contain object-left"
-            priority
+            className="h-12 w-auto"
           />
         </Link>
 

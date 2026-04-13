@@ -109,6 +109,7 @@
     "navigation": "Navigation",
     "contactTitle": "Contact",
     "partnersTitle": "Partners",
-    "copyright": "© {year} Drovar. All rights reserved."
+    "copyright": "© {year} Drovar. All rights reserved.",
+    "madeBy": "Designed and built by"
   }
 }

@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   title: "Drovar — wyposażenie sklepów",
   description:
     "Projektujemy i produkujemy nowoczesne wyposażenie sklepów. Realizujemy projekty od koncepcji po transport i profesjonalny montaż.",
+  openGraph: {
+    title: "Drovar — wyposażenie sklepów",
+    description:
+      "Projektujemy i produkujemy nowoczesne wyposażenie sklepów. Realizujemy projekty od koncepcji po transport i profesjonalny montaż.",
+    type: "website",
+  },
 };
 
 type LayoutProps = {

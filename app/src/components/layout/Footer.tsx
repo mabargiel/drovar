@@ -1,6 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-import Image from "next/image";
 import Container from "@/components/ui/Container";
 
 export default function Footer() {
@@ -22,12 +21,11 @@ export default function Footer() {
         <div className="animate-on-scroll animate-fade-in grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link href={`/${locale}`} className="relative mb-4 block h-8 w-28">
-              <Image
-                src="/assets/logo.png"
+            <Link href={`/${locale}`} className="mb-4 block">
+              <img
+                src="/assets/logo-light.svg"
                 alt="Drovar"
-                fill
-                className="object-contain object-left brightness-200"
+                className="h-8 w-auto"
               />
             </Link>
             <p className="text-sm text-cream-dark">{t("description")}</p>
@@ -94,8 +92,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-cream/10 pt-6 text-center text-sm text-cream-dark">
-          {t("copyright", { year: new Date().getFullYear() })}
+        <div className="mt-10 flex flex-col items-center justify-between gap-2 border-t border-cream/10 pt-6 text-sm text-cream-dark md:flex-row">
+          <span>{t("copyright", { year: new Date().getFullYear() })}</span>
+          <span>{t("madeBy")} Mateusz Bargiel</span>
         </div>
       </Container>
     </footer>
