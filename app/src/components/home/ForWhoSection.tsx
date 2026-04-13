@@ -9,10 +9,12 @@ export default function ForWhoSection() {
   return (
     <section className="bg-cream-light py-20 lg:py-28">
       <Container>
-        <SectionHeading title={t("title")} centered />
+        <div className="animate-on-scroll animate-fade-up">
+          <SectionHeading title={t("title")} centered />
+        </div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
-          <div className="rounded-lg border border-border bg-cream p-8 text-center">
+          <div className="animate-on-scroll animate-fade-up rounded-lg border border-border bg-cream p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-delay="1">
             <Store className="mx-auto mb-4 h-10 w-10 text-accent" />
             <h3 className="mb-3 text-xl font-bold">
               {t("singleShops.title")}
@@ -20,7 +22,7 @@ export default function ForWhoSection() {
             <p className="text-muted">{t("singleShops.description")}</p>
           </div>
 
-          <div className="rounded-lg border border-border bg-cream p-8 text-center">
+          <div className="animate-on-scroll animate-fade-up rounded-lg border border-border bg-cream p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-delay="2">
             <Building2 className="mx-auto mb-4 h-10 w-10 text-accent" />
             <h3 className="mb-3 text-xl font-bold">{t("chains.title")}</h3>
             <p className="text-muted">{t("chains.description")}</p>

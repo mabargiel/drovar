@@ -20,15 +20,19 @@ function RealizationsPageContent({
   return (
     <section className="pt-28 pb-20 lg:pb-28">
       <Container>
-        <SectionHeading
-          title={t("pageTitle")}
-          subtitle={t("pageSubtitle")}
-          centered
-        />
+        <div className="animate-on-scroll animate-fade-up">
+          <SectionHeading
+            title={t("pageTitle")}
+            subtitle={t("pageSubtitle")}
+            centered
+          />
+        </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {realizations.map((realization) => (
-            <RealizationCard key={realization._id} realization={realization} />
+          {realizations.map((realization, index) => (
+            <div key={realization._id} className="animate-on-scroll animate-fade-up" data-delay={((index % 3) + 1)}>
+              <RealizationCard realization={realization} />
+            </div>
           ))}
         </div>
       </Container>

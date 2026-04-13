@@ -10,7 +10,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 lg:py-28">
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div>
+          <div className="animate-on-scroll animate-fade-up">
             <SectionHeading title={t("title")} />
             <div className="mt-8 space-y-4">
               <p className="text-lg text-muted">{t("paragraph1")}</p>
@@ -18,7 +18,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
+          <div className="animate-on-scroll animate-fade-up relative aspect-[4/5] overflow-hidden rounded-lg" data-delay="2">
             <Image
               src="/assets/about-team.jpg"
               alt={t("title")}

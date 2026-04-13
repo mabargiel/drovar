@@ -34,7 +34,7 @@ export default async function RealizationDetailPage({ params }: PageProps) {
   return (
     <>
       {/* Hero banner */}
-      <section className="relative flex h-[50vh] min-h-[320px] items-end overflow-hidden">
+      <section className="animate-on-scroll animate-fade-in relative flex h-[50vh] min-h-[320px] items-end overflow-hidden">
         <Image
           src={coverUrl}
           alt={realization.title}
@@ -66,7 +66,7 @@ export default async function RealizationDetailPage({ params }: PageProps) {
       </section>
 
       {/* Content */}
-      <section className="py-12 lg:py-20">
+      <section className="animate-on-scroll animate-fade-up py-12 lg:py-20">
         <Container>
           <Link
             href={`/${locale}/realizations`}

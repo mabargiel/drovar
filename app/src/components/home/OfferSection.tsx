@@ -25,13 +25,16 @@ export default function OfferSection() {
   return (
     <section id="offer" className="py-20 lg:py-28">
       <Container>
-        <SectionHeading title={t("title")} subtitle={t("subtitle")} />
+        <div className="animate-on-scroll animate-fade-up">
+          <SectionHeading title={t("title")} subtitle={t("subtitle")} />
+        </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {offerItems.map(({ key, Icon }) => (
+          {offerItems.map(({ key, Icon }, index) => (
             <div
               key={key}
-              className="rounded-lg border border-border bg-cream-light p-6 transition-shadow hover:shadow-md"
+              className="animate-on-scroll animate-fade-up rounded-lg border border-border bg-cream-light p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              data-delay={index + 1}
             >
               <Icon className="mb-4 h-8 w-8 text-accent" />
               <h3 className="mb-2 text-lg font-bold">{t(`${key}.title`)}</h3>

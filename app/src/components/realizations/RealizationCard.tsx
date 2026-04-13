@@ -19,9 +19,9 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
   return (
     <Link
       href={`/${locale}/realizations/${realization.slug}`}
-      className="group overflow-hidden rounded-lg border border-border bg-cream-light transition-shadow hover:shadow-lg"
+      className="group overflow-hidden rounded-lg bg-cream-light transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
     >
-      <div className="relative aspect-4/3 overflow-hidden">
+      <div className="relative aspect-4/3 overflow-hidden rounded-t-lg">
         <Image
           src={imageUrl}
           alt={realization.title}

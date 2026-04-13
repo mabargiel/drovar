@@ -65,20 +65,20 @@ export default function HeroSection() {
 
       <div className="pointer-events-none relative z-10 text-center">
         <h1
-          className="text-5xl font-bold text-cream md:text-6xl lg:text-8xl"
+          className="animate-hero-enter text-5xl font-bold text-cream md:text-6xl lg:text-8xl"
           style={{ textShadow: "0 2px 30px rgba(0,0,0,0.9), 0 0 80px rgba(0,0,0,0.6)" }}
         >
           {t("title")}
         </h1>
-        <div className="mx-auto mt-4 h-1 w-20 bg-accent" />
+        <div className="animate-hero-enter mx-auto mt-4 h-1 w-20 bg-accent" style={{ animationDelay: "100ms" }} />
         <p
-          className="mt-6 text-lg font-light tracking-[0.3em] uppercase text-cream/90 md:text-xl"
-          style={{ textShadow: "0 1px 20px rgba(0,0,0,0.9), 0 0 60px rgba(0,0,0,0.5)" }}
+          className="animate-hero-enter mt-6 text-lg font-light tracking-[0.3em] uppercase text-cream/90 md:text-xl"
+          style={{ textShadow: "0 1px 20px rgba(0,0,0,0.9), 0 0 60px rgba(0,0,0,0.5)", animationDelay: "200ms" }}
         >
           {t("keywords")}
         </p>
 
-        <div className="pointer-events-auto mt-10 flex flex-wrap justify-center gap-4">
+        <div className="animate-hero-enter pointer-events-auto mt-10 flex flex-wrap justify-center gap-4" style={{ animationDelay: "400ms" }}>
           <Button variant="primary" href={`/${locale}/realizations`}>
             {t("ctaPrimary")}
           </Button>

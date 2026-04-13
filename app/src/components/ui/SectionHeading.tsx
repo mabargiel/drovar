@@ -19,7 +19,7 @@ export default function SectionHeading({
         {title}
       </h2>
       <div
-        className={`mt-3 h-1 w-16 bg-accent ${centered ? "mx-auto" : ""}`}
+        className={`animate-on-scroll animate-bar-grow mt-3 h-1 w-16 bg-accent ${centered ? "mx-auto" : ""}`}
       />
       {subtitle && (
         <p

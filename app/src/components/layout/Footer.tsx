@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary-dark py-12 text-cream lg:py-16">
       <Container>
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="animate-on-scroll animate-fade-in grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <Link href={`/${locale}`} className="relative mb-4 block h-8 w-28">

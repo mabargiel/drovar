@@ -24,7 +24,7 @@ function RealizationsPreviewContent({
   return (
     <section className="bg-cream-light py-20 lg:py-28">
       <Container>
-        <div className="flex items-end justify-between">
+        <div className="animate-on-scroll animate-fade-up flex items-end justify-between">
           <SectionHeading title={t("title")} subtitle={t("subtitle")} />
           <Link
             href={`/${locale}/realizations`}
@@ -36,8 +36,10 @@ function RealizationsPreviewContent({
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {preview.map((realization) => (
-            <RealizationCard key={realization._id} realization={realization} />
+          {preview.map((realization, index) => (
+            <div key={realization._id} className="animate-on-scroll animate-fade-up" data-delay={index + 1}>
+              <RealizationCard realization={realization} />
+            </div>
           ))}
         </div>
 

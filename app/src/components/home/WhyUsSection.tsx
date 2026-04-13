@@ -23,11 +23,13 @@ export default function WhyUsSection() {
   return (
     <section className="py-20 lg:py-28">
       <Container>
-        <SectionHeading title={t("title")} centered />
+        <div className="animate-on-scroll animate-fade-up">
+          <SectionHeading title={t("title")} centered />
+        </div>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
-          {reasons.map(({ key, Icon }) => (
-            <div key={key} className="text-center">
+          {reasons.map(({ key, Icon }, index) => (
+            <div key={key} className="animate-on-scroll animate-fade-up text-center" data-delay={index + 1}>
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-accent/10">
                 <Icon className="h-6 w-6 text-accent" />
               </div>

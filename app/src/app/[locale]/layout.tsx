@@ -6,6 +6,7 @@ import { Lato } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollAnimator from "@/components/ui/ScrollAnimator";
 import "../globals.css";
 
 const lato = Lato({
@@ -40,6 +41,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     <html lang={locale}>
       <body className={`${lato.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
+          <ScrollAnimator />
           <Navbar />
           <main>{children}</main>
           <Footer />

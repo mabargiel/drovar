@@ -9,19 +9,21 @@ export default function AssemblySection() {
   return (
     <section className="bg-primary-dark py-20 text-cream lg:py-28">
       <Container>
-        <SectionHeading title={t("title")} centered light />
+        <div className="animate-on-scroll animate-fade-up">
+          <SectionHeading title={t("title")} centered light />
 
-        <div className="mt-8 flex justify-center gap-6">
-          <Truck className="h-8 w-8 text-accent" />
-          <HardHat className="h-8 w-8 text-accent" />
+          <div className="mt-8 flex justify-center gap-6">
+            <Truck className="h-8 w-8 text-accent" />
+            <HardHat className="h-8 w-8 text-accent" />
+          </div>
+
+          <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-cream/80">
+            {t("description")}
+          </p>
+          <p className="mx-auto mt-4 max-w-2xl text-center font-bold text-accent">
+            {t("subtitle")}
+          </p>
         </div>
-
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-cream/80">
-          {t("description")}
-        </p>
-        <p className="mx-auto mt-4 max-w-2xl text-center font-bold text-accent">
-          {t("subtitle")}
-        </p>
       </Container>
     </section>
   );
