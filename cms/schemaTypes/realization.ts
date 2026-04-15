@@ -46,6 +46,14 @@ export const realization = defineType({
       type: "localizedText",
     }),
     defineField({
+      name: "videoUrl",
+      title: "Video URL",
+      type: "url",
+      description: "YouTube video URL",
+      validation: (rule) =>
+        rule.uri({ scheme: ["https"], allowRelative: false }),
+    }),
+    defineField({
       name: "order",
       title: "Display Order",
       type: "number",

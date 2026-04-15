@@ -113,9 +113,11 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <Link href={`/${locale}`} className="shrink-0">
           <img
-            src={scrolled ? "/assets/logo.svg" : "/assets/logo-light.svg"}
+            src="/assets/logo.svg"
             alt="Drovar"
-            className="h-12 w-auto"
+            className={`h-12 w-auto transition-all duration-300 ${
+              scrolled ? "" : "brightness-0 invert"
+            }`}
           />
         </Link>
 

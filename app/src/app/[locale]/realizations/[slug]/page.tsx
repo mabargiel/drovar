@@ -4,9 +4,17 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Container from "@/components/ui/Container";
+import YouTubeEmbed from "@/components/ui/YouTubeEmbed";
 import RealizationGallery from "@/components/realizations/RealizationGallery";
 import { getRealizationBySlug } from "@/lib/sanity/queries";
 import { sanityImageUrl } from "@/lib/sanity/image";
+
+function extractYouTubeId(url: string): string {
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([a-zA-Z0-9_-]{11})/,
+  );
+  return match?.[1] ?? "";
+}
 
 type PageProps = {
   params: Promise<{ locale: string; slug: string }>;
@@ -76,11 +84,23 @@ export default async function RealizationDetailPage({ params }: PageProps) {
             {t("backToList")}
           </Link>
 
-          {description && (
-            <div className="mb-12 max-w-3xl">
-              <p className="text-lg leading-relaxed text-primary-light">
-                {description}
-              </p>
+          {(description || realization.videoUrl) && (
+            <div className={`mb-12 ${realization.videoUrl && description ? "grid items-start gap-8 lg:grid-cols-2" : ""}`}>
+              {description && (
+                <div>
+                  <p className="text-lg leading-relaxed text-primary-light">
+                    {description}
+                  </p>
+                </div>
+              )}
+              {realization.videoUrl && (
+                <div className="aspect-video overflow-hidden rounded-lg">
+                  <YouTubeEmbed
+                    videoId={extractYouTubeId(realization.videoUrl)}
+                    title={realization.title}
+                  />
+                </div>
+              )}
             </div>
           )}
 

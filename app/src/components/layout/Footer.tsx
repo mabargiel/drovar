@@ -23,9 +23,9 @@ export default function Footer() {
           <div>
             <Link href={`/${locale}`} className="mb-4 block">
               <img
-                src="/assets/logo-light.svg"
+                src="/assets/logo.svg"
                 alt="Drovar"
-                className="h-8 w-auto"
+                className="h-8 w-auto brightness-0 invert"
               />
             </Link>
             <p className="text-sm text-cream-dark">{t("description")}</p>

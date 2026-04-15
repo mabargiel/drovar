@@ -83,6 +83,7 @@ async function seedRealization(data: SeedRealization, label: string) {
       de: data.description.de,
       it: data.description.it,
     },
+    ...(data.videoUrl ? { videoUrl: data.videoUrl } : {}),
     order: data.order,
   };
 

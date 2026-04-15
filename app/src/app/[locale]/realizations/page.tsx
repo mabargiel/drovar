@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import RealizationCard from "@/components/realizations/RealizationCard";
+import RealizationGrid from "@/components/realizations/RealizationGrid";
 import { getAllRealizations } from "@/lib/sanity/queries";
 
 export default async function RealizationsPage() {
@@ -28,13 +29,7 @@ function RealizationsPageContent({
           />
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {realizations.map((realization, index) => (
-            <div key={realization._id} className="animate-on-scroll animate-fade-up" data-delay={((index % 3) + 1)}>
-              <RealizationCard realization={realization} />
-            </div>
-          ))}
-        </div>
+        <RealizationGrid realizations={realizations} batchSize={12} />
       </Container>
     </section>
   );

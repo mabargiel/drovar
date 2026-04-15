@@ -14,6 +14,7 @@ export type SanityRealization = {
     de?: string;
     it?: string;
   };
+  videoUrl?: string;
   order: number;
 };
 
@@ -51,6 +52,7 @@ const realizationDetailFields = `
     asset-> { "_ref": _id, url }
   },
   description,
+  videoUrl,
   order
 `;
 
