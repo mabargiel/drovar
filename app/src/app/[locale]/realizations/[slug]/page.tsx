@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,6 +20,45 @@ function extractYouTubeId(url: string): string {
 type PageProps = {
   params: Promise<{ locale: string; slug: string }>;
 };
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const realization = await getRealizationBySlug(slug);
+
+  if (!realization) return {};
+
+  const description =
+    realization.description?.[locale as keyof typeof realization.description] ??
+    realization.description?.en ??
+    "";
+
+  const ogImage = sanityImageUrl(realization.coverImage)
+    .width(1200)
+    .height(630)
+    .format("webp")
+    .url();
+
+  return {
+    title: realization.title,
+    description: description || undefined,
+    openGraph: {
+      title: realization.title,
+      description: description || undefined,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    alternates: {
+      canonical: `https://drovar.pl/${locale}/realizations/${slug}`,
+      languages: Object.fromEntries(
+        ["en", "pl", "de", "it"].map((l) => [
+          l,
+          `https://drovar.pl/${l}/realizations/${slug}`,
+        ]),
+      ),
+    },
+  };
+}
 
 export default async function RealizationDetailPage({ params }: PageProps) {
   const { locale, slug } = await params;

@@ -16,6 +16,7 @@ type ButtonAsButton = ButtonBaseProps & {
   href?: never;
   type?: "button" | "submit" | "reset";
   onClick?: () => void;
+  disabled?: boolean;
 };
 
 type ButtonProps = ButtonAsLink | ButtonAsButton;
@@ -45,10 +46,15 @@ export default function Button({
     );
   }
 
-  const { type = "button", onClick } = props as ButtonAsButton;
+  const { type = "button", onClick, disabled } = props as ButtonAsButton;
 
   return (
-    <button type={type} onClick={onClick} className={styles}>
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`${styles} disabled:cursor-not-allowed disabled:opacity-50`}
+    >
       {children}
     </button>
   );

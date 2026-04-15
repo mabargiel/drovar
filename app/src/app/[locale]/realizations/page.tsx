@@ -1,9 +1,35 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import RealizationCard from "@/components/realizations/RealizationCard";
 import RealizationGrid from "@/components/realizations/RealizationGrid";
 import { getAllRealizations } from "@/lib/sanity/queries";
+
+type PageProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "realizations" });
+
+  return {
+    title: t("pageTitle"),
+    description: t("pageSubtitle"),
+    alternates: {
+      canonical: `https://drovar.pl/${locale}/realizations`,
+      languages: Object.fromEntries(
+        ["en", "pl", "de", "it"].map((l) => [
+          l,
+          `https://drovar.pl/${l}/realizations`,
+        ]),
+      ),
+    },
+  };
+}
 
 export default async function RealizationsPage() {
   const realizations = await getAllRealizations();

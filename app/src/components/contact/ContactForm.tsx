@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useState, useTransition } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { submitContactForm } from "@/app/[locale]/contact/actions";
 import Button from "@/components/ui/Button";
 
 type FormData = {
@@ -37,9 +38,13 @@ const shopTypeKeys = [
 
 export default function ContactForm() {
   const t = useTranslations("contact.form");
+  const locale = useLocale();
   const [data, setData] = useState<FormData>(initialData);
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+  const [honeypot, setHoneypot] = useState("");
+  const [isPending, startTransition] = useTransition();
 
   function validate(): FormErrors {
     const errs: FormErrors = {};
@@ -69,15 +74,27 @@ export default function ContactForm() {
     }
 
     setErrors({});
-    alert(JSON.stringify(data, null, 2));
-    setData(initialData);
-    setSubmitted(true);
+    setServerError(null);
+
+    startTransition(async () => {
+      const result = await submitContactForm({
+        ...data,
+        honeypot,
+        locale,
+      });
+
+      if (result.success) {
+        setData(initialData);
+        setSubmitted(true);
+      } else if (result.error === "rateLimited") {
+        setServerError(t("errors.rateLimited"));
+      } else {
+        setServerError(t("errors.serverError"));
+      }
+    });
   }
 
-  function handleChange(
-    field: keyof FormData,
-    value: string,
-  ) {
+  function handleChange(field: keyof FormData, value: string) {
     setData((prev) => ({ ...prev, [field]: value }));
     if (errors[field]) {
       setErrors((prev) => {
@@ -86,6 +103,7 @@ export default function ContactForm() {
         return next;
       });
     }
+    if (serverError) setServerError(null);
     if (submitted) setSubmitted(false);
   }
 
@@ -97,8 +115,30 @@ export default function ContactForm() {
     );
   }
 
+  const inputClass =
+    "w-full rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none disabled:opacity-50";
+
   return (
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+      {/* Honeypot — hidden from humans */}
+      <div className="absolute -left-[9999px]" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+        />
+      </div>
+
+      {serverError && (
+        <div className="rounded-lg border border-error/30 bg-error/10 p-4">
+          <p className="text-sm font-bold text-error">{serverError}</p>
+        </div>
+      )}
+
       {/* Name */}
       <div>
         <label htmlFor="name" className="mb-1 block text-sm font-bold">
@@ -110,7 +150,8 @@ export default function ContactForm() {
           value={data.name}
           onChange={(e) => handleChange("name", e.target.value)}
           placeholder={t("namePlaceholder")}
-          className="w-full rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none"
+          disabled={isPending}
+          className={inputClass}
         />
         {errors.name && (
           <p className="mt-1 text-sm text-error">{errors.name}</p>
@@ -128,7 +169,8 @@ export default function ContactForm() {
           value={data.email}
           onChange={(e) => handleChange("email", e.target.value)}
           placeholder={t("emailPlaceholder")}
-          className="w-full rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none"
+          disabled={isPending}
+          className={inputClass}
         />
         {errors.email && (
           <p className="mt-1 text-sm text-error">{errors.email}</p>
@@ -147,7 +189,8 @@ export default function ContactForm() {
             value={data.phone}
             onChange={(e) => handleChange("phone", e.target.value)}
             placeholder={t("phonePlaceholder")}
-            className="w-full rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none"
+            disabled={isPending}
+            className={inputClass}
           />
         </div>
         <div>
@@ -160,7 +203,8 @@ export default function ContactForm() {
             value={data.country}
             onChange={(e) => handleChange("country", e.target.value)}
             placeholder={t("countryPlaceholder")}
-            className="w-full rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none"
+            disabled={isPending}
+            className={inputClass}
           />
         </div>
       </div>
@@ -175,7 +219,8 @@ export default function ContactForm() {
             id="shopType"
             value={data.shopType}
             onChange={(e) => handleChange("shopType", e.target.value)}
-            className="w-full rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none"
+            disabled={isPending}
+            className={inputClass}
           >
             <option value="">{t("shopTypePlaceholder")}</option>
             {shopTypeKeys.map((key) => (
@@ -196,7 +241,8 @@ export default function ContactForm() {
             value={data.area}
             onChange={(e) => handleChange("area", e.target.value)}
             placeholder={t("areaPlaceholder")}
-            className="w-full rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none"
+            disabled={isPending}
+            className={inputClass}
           />
         </div>
       </div>
@@ -212,15 +258,16 @@ export default function ContactForm() {
           value={data.message}
           onChange={(e) => handleChange("message", e.target.value)}
           placeholder={t("messagePlaceholder")}
-          className="w-full resize-y rounded border border-border bg-cream-light px-4 py-3 text-sm transition-colors focus:border-accent focus:outline-none"
+          disabled={isPending}
+          className={`${inputClass} resize-y`}
         />
         {errors.message && (
           <p className="mt-1 text-sm text-error">{errors.message}</p>
         )}
       </div>
 
-      <Button variant="primary" type="submit">
-        {t("submit")}
+      <Button variant="primary" type="submit" disabled={isPending}>
+        {isPending ? t("sending") : t("submit")}
       </Button>
     </form>
   );

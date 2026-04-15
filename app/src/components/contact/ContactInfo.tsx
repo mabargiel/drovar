@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, FileText } from "lucide-react";
+import ContactMap from "./ContactMap";
 
 export default function ContactInfo() {
   const t = useTranslations("contact.info");
@@ -26,12 +27,21 @@ export default function ContactInfo() {
         <span className="font-bold">{t("email")}</span>
       </a>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-start gap-4">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
           <MapPin className="h-5 w-5 text-accent" />
         </div>
-        <span className="font-bold">{t("address")}</span>
+        <span className="whitespace-pre-line font-bold">{t("address")}</span>
       </div>
+
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
+          <FileText className="h-5 w-5 text-accent" />
+        </div>
+        <span className="font-bold">{t("nip")}</span>
+      </div>
+
+      <ContactMap />
     </div>
   );
 }

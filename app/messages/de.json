@@ -129,9 +129,10 @@
     "title": "Kontakt",
     "subtitle": "Kontaktieren Sie uns — wir erstellen ein Konzept und ein auf Ihr Projekt abgestimmtes Angebot.",
     "info": {
-      "phone": "+48 123 456 789",
-      "email": "kontakt@drovar.pl",
-      "address": "ul. Przykładowa 1, 00-000 Warszawa"
+      "phone": "+48 796 694 327",
+      "email": "info@drovar.pl",
+      "address": "Drovar Sp. z o.o.\nul. Sebastiana 12\n32-020 Wieliczka",
+      "nip": "USt-IdNr.: PL6832109118"
     },
     "form": {
       "name": "Name",
@@ -157,12 +158,17 @@
       "message": "Nachricht",
       "messagePlaceholder": "Beschreiben Sie Ihr Projekt...",
       "submit": "Anfrage senden",
+      "sending": "Wird gesendet...",
       "success": "Vielen Dank! Ihre Anfrage wurde gesendet.",
       "validation": {
         "nameRequired": "Name ist erforderlich",
         "emailRequired": "E-Mail ist erforderlich",
         "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
         "messageRequired": "Nachricht ist erforderlich"
+      },
+      "errors": {
+        "rateLimited": "Zu viele Anfragen. Bitte versuchen Sie es in einigen Minuten erneut.",
+        "serverError": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
       }
     }
   },

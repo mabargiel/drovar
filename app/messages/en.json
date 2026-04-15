@@ -87,7 +87,12 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Get in touch — we will prepare a concept and quotation tailored to your project.",
-    "info": { "phone": "+48 123 456 789", "email": "kontakt@drovar.pl", "address": "ul. Przykładowa 1, 00-000 Warszawa" },
+    "info": {
+      "phone": "+48 796 694 327",
+      "email": "info@drovar.pl",
+      "address": "Drovar Sp. z o.o.\nul. Sebastiana 12\n32-020 Wieliczka",
+      "nip": "TAX ID: PL6832109118"
+    },
     "form": {
       "name": "Name", "namePlaceholder": "Your name",
       "email": "Email", "emailPlaceholder": "your@email.com",
@@ -98,8 +103,10 @@
       "area": "Shop area (m²)", "areaPlaceholder": "e.g. 50",
       "message": "Message", "messagePlaceholder": "Describe your project...",
       "submit": "Send enquiry",
+      "sending": "Sending...",
       "success": "Thank you! Your enquiry has been sent.",
-      "validation": { "nameRequired": "Name is required", "emailRequired": "Email is required", "emailInvalid": "Please enter a valid email address", "messageRequired": "Message is required" }
+      "validation": { "nameRequired": "Name is required", "emailRequired": "Email is required", "emailInvalid": "Please enter a valid email address", "messageRequired": "Message is required" },
+      "errors": { "rateLimited": "Too many requests. Please try again in a few minutes.", "serverError": "Failed to send your message. Please try again later." }
     }
   },
   "categories": { "tobacco": "Tobacco shop" },

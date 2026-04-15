@@ -129,9 +129,10 @@
     "title": "Kontakt",
     "subtitle": "Skontaktuj się z nami — przygotujemy koncepcję i wycenę dopasowaną do Twojego projektu.",
     "info": {
-      "phone": "+48 123 456 789",
-      "email": "kontakt@drovar.pl",
-      "address": "ul. Przykładowa 1, 00-000 Warszawa"
+      "phone": "+48 796 694 327",
+      "email": "info@drovar.pl",
+      "address": "Drovar Sp. z o.o.\nul. Sebastiana 12\n32-020 Wieliczka",
+      "nip": "NIP: PL6832109118"
     },
     "form": {
       "name": "Imię",
@@ -157,12 +158,17 @@
       "message": "Wiadomość",
       "messagePlaceholder": "Opisz swój projekt...",
       "submit": "Wyślij zapytanie",
+      "sending": "Wysyłanie...",
       "success": "Dziękujemy! Twoje zapytanie zostało wysłane.",
       "validation": {
         "nameRequired": "Imię jest wymagane",
         "emailRequired": "Email jest wymagany",
         "emailInvalid": "Podaj prawidłowy adres email",
         "messageRequired": "Wiadomość jest wymagana"
+      },
+      "errors": {
+        "rateLimited": "Zbyt wiele zapytań. Spróbuj ponownie za kilka minut.",
+        "serverError": "Nie udało się wysłać wiadomości. Spróbuj ponownie później."
       }
     }
   },

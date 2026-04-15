@@ -87,7 +87,12 @@
   "contact": {
     "title": "Contatti",
     "subtitle": "Ci contatti — prepareremo un concept e un preventivo su misura per il Suo progetto.",
-    "info": { "phone": "+48 123 456 789", "email": "kontakt@drovar.pl", "address": "ul. Przykładowa 1, 00-000 Warszawa" },
+    "info": {
+      "phone": "+48 796 694 327",
+      "email": "info@drovar.pl",
+      "address": "Drovar Sp. z o.o.\nul. Sebastiana 12\n32-020 Wieliczka",
+      "nip": "P. IVA: PL6832109118"
+    },
     "form": {
       "name": "Nome", "namePlaceholder": "Il Suo nome",
       "email": "Email", "emailPlaceholder": "la-sua@email.com",
@@ -98,8 +103,10 @@
       "area": "Superficie del negozio (m²)", "areaPlaceholder": "es. 50",
       "message": "Messaggio", "messagePlaceholder": "Descriva il Suo progetto...",
       "submit": "Invia richiesta",
+      "sending": "Invio in corso...",
       "success": "Grazie! La Sua richiesta è stata inviata.",
-      "validation": { "nameRequired": "Il nome è obbligatorio", "emailRequired": "L'email è obbligatoria", "emailInvalid": "Inserisca un indirizzo email valido", "messageRequired": "Il messaggio è obbligatorio" }
+      "validation": { "nameRequired": "Il nome è obbligatorio", "emailRequired": "L'email è obbligatoria", "emailInvalid": "Inserisca un indirizzo email valido", "messageRequired": "Il messaggio è obbligatorio" },
+      "errors": { "rateLimited": "Troppe richieste. Riprovi tra qualche minuto.", "serverError": "Invio del messaggio non riuscito. Riprovi più tardi." }
     }
   },
   "categories": { "tobacco": "Tabaccheria" },
