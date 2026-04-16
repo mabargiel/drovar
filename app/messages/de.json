@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Drovar — Ladeneinrichtung",
+    "title": "Drovar — Einrichtung von Verkaufsstellen",
     "description": "Wir entwerfen und produzieren moderne Ladeneinrichtungen. Wir realisieren Projekte vom Konzept bis zum Transport und zur professionellen Montage."
   },
   "nav": {
@@ -13,13 +13,13 @@
     "closeMenu": "Menü schließen"
   },
   "hero": {
-    "title": "Ladeneinrichtung",
+    "title": "Einrichtung von Verkaufsstellen",
     "keywords": "Entwurf · Produktion · Montage",
-    "subtitle": "Wir entwerfen und fertigen die Einrichtung Ihres Geschäfts — vom ersten Konzept bis zum verkaufsfertigen Raum.",
+    "subtitle": "Wir entwerfen und fertigen die Einrichtung Ihrer Verkaufsstelle — vom ersten Konzept bis zum verkaufsfertigen Raum.",
     "ctaPrimary": "Referenzen ansehen",
     "ctaSecondary": "Kontakt aufnehmen",
     "goToSlide": "Zum Slide {number}",
-    "scrollDown": "Nach unten scrollen",
+    "scrollDown": "Scrollen",
     "slides": {
       "0": "Entwurfsskizze — Einrichtung eines Tabakgeschäfts",
       "1": "Entwurfsskizze — Ladenregale und verglaste Theke",
@@ -127,7 +127,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Kontaktieren Sie uns — wir erstellen ein Konzept und ein auf Ihr Projekt abgestimmtes Angebot.",
+    "subtitle": "Wenn Sie über eine Zusammenarbeit sprechen oder einen Termin vereinbaren möchten, schreiben Sie uns — wir melden uns schnellstmöglich zurück.",
     "info": {
       "phone": "+48 796 694 327",
       "email": "info@drovar.pl",

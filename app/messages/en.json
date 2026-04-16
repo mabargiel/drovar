@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Drovar — shop fitting",
+    "title": "Drovar — retail outlet fit-out",
     "description": "We design and manufacture modern shop fittings. We deliver projects from concept through transport to professional installation."
   },
   "nav": {
@@ -13,13 +13,13 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "title": "Shop fitting",
+    "title": "Retail outlet fit-out",
     "keywords": "design · manufacturing · installation",
-    "subtitle": "We design and build your shop's interior — from initial concept to a ready-to-use retail space.",
+    "subtitle": "We design and build your retail outlet's interior — from initial concept to a ready-to-use retail space.",
     "ctaPrimary": "View projects",
     "ctaSecondary": "Get in touch",
     "goToSlide": "Go to slide {number}",
-    "scrollDown": "Scroll down",
+    "scrollDown": "Scroll",
     "slides": {
       "0": "Design sketch — tobacco shop fitting",
       "1": "Design sketch — shop shelving and glazed counter",
@@ -86,7 +86,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in touch — we will prepare a concept and quotation tailored to your project.",
+    "subtitle": "If you'd like to discuss collaboration or arrange a meeting, send us a message — we'll get back to you as soon as we can.",
     "info": {
       "phone": "+48 796 694 327",
       "email": "info@drovar.pl",

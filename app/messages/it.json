@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Drovar — allestimento negozi",
+    "title": "Drovar — allestimento di punti vendita",
     "description": "Progettiamo e produciamo arredi moderni per negozi. Realizziamo progetti dal concept al trasporto e al montaggio professionale."
   },
   "nav": {
@@ -13,13 +13,13 @@
     "closeMenu": "Chiudi menu"
   },
   "hero": {
-    "title": "Allestimento negozi",
+    "title": "Allestimento di punti vendita",
     "keywords": "progettazione · produzione · montaggio",
-    "subtitle": "Progettiamo e realizziamo l'allestimento del Suo negozio — dal primo concept allo spazio di vendita completo.",
+    "subtitle": "Progettiamo e realizziamo l'allestimento del Suo punto vendita — dal primo concept allo spazio di vendita completo.",
     "ctaPrimary": "Scopra le realizzazioni",
     "ctaSecondary": "Ci contatti",
     "goToSlide": "Vai alla slide {number}",
-    "scrollDown": "Scorri verso il basso",
+    "scrollDown": "Scorri",
     "slides": {
       "0": "Bozzetto di progetto — allestimento di una tabaccheria",
       "1": "Bozzetto di progetto — scaffalature e banco vetrina",
@@ -86,7 +86,7 @@
   },
   "contact": {
     "title": "Contatti",
-    "subtitle": "Ci contatti — prepareremo un concept e un preventivo su misura per il Suo progetto.",
+    "subtitle": "Se desidera parlare di una collaborazione o fissare un incontro, ci scriva — risponderemo il prima possibile.",
     "info": {
       "phone": "+48 796 694 327",
       "email": "info@drovar.pl",

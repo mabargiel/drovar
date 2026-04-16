@@ -95,20 +95,54 @@ export default function Footer() {
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-accent">
               {t("partnersTitle")}
             </h3>
-            <a
-              href="https://mdv-boutique.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-cream-dark transition-colors hover:text-cream"
-            >
-              MDV Boutique
-            </a>
+            <ul className="space-y-2 text-sm text-cream-dark">
+              <li>
+                <a
+                  href="https://mdv-boutique.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-cream"
+                >
+                  MDV Boutique
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.bio-concept-pharma.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-cream"
+                >
+                  Bio Concept E-liquides
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.maisondevapotage.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-cream"
+                >
+                  Maison de Vapotage
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-2 border-t border-cream/10 pt-6 text-sm text-cream-dark md:flex-row">
           <span>{t("copyright", { year: new Date().getFullYear() })}</span>
-          <span>{t("madeBy")} Mateusz Bargiel</span>
+          <span>
+            {t("madeBy")}{" "}
+            <a
+              href="https://www.linkedin.com/in/mbargiel/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-cream"
+            >
+              Mateusz Bargiel
+            </a>
+          </span>
         </div>
       </Container>
     </footer>

@@ -65,7 +65,7 @@ export default function HeroSection() {
 
       <div className="pointer-events-none relative z-10 text-center">
         <h1
-          className="animate-hero-enter text-5xl font-bold text-cream md:text-6xl lg:text-8xl"
+          className="animate-hero-enter mx-auto max-w-5xl text-balance text-4xl font-bold text-cream md:text-5xl lg:text-7xl"
           style={{ textShadow: "0 2px 30px rgba(0,0,0,0.9), 0 0 80px rgba(0,0,0,0.6)" }}
         >
           {t("title")}
@@ -94,7 +94,7 @@ export default function HeroSection() {
 
       {/* Carousel dots */}
       <nav
-        className="absolute bottom-20 left-1/2 z-20 flex -translate-x-1/2 gap-2.5"
+        className="absolute bottom-32 left-1/2 z-20 flex -translate-x-1/2 gap-2.5"
         aria-label="Carousel"
       >
         {heroImages.map((_, i) => (
@@ -121,10 +121,20 @@ export default function HeroSection() {
             .getElementById("about")
             ?.scrollIntoView({ behavior: "smooth" })
         }
-        className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 text-cream/60 transition-colors hover:text-cream"
+        className="group absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 flex-col items-center gap-2 text-cream/80 transition-colors hover:text-cream"
         aria-label={t("scrollDown")}
       >
-        <ChevronDown className="h-8 w-8 animate-bounce" />
+        <span
+          className="text-xs font-bold uppercase tracking-[0.25em] md:text-sm"
+          style={{ textShadow: "0 1px 8px rgba(0,0,0,0.7)" }}
+        >
+          {t("scrollDown")}
+        </span>
+        <ChevronDown
+          className="h-12 w-12 animate-bounce md:h-14 md:w-14"
+          strokeWidth={2.5}
+          style={{ filter: "drop-shadow(0 1px 6px rgba(0,0,0,0.6))" }}
+        />
       </button>
     </section>
   );

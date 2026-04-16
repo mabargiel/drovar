@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Drovar — wyposażenie sklepów",
+    "title": "Drovar — wyposażenie punktów handlowych",
     "description": "Projektujemy i produkujemy nowoczesne wyposażenie sklepów. Realizujemy projekty od koncepcji po transport i profesjonalny montaż."
   },
   "nav": {
@@ -13,13 +13,13 @@
     "closeMenu": "Zamknij menu"
   },
   "hero": {
-    "title": "Wyposażenie sklepów",
+    "title": "Wyposażenie punktów handlowych",
     "keywords": "projekt · produkcja · montaż",
-    "subtitle": "Zaprojektujemy i wykonamy wyposażenie Twojego sklepu — od pierwszej koncepcji po gotową przestrzeń sprzedażową.",
+    "subtitle": "Zaprojektujemy i wykonamy wyposażenie Twojego punktu handlowego — od pierwszej koncepcji po gotową przestrzeń sprzedażową.",
     "ctaPrimary": "Zobacz realizacje",
     "ctaSecondary": "Skontaktuj się",
     "goToSlide": "Przejdź do slajdu {number}",
-    "scrollDown": "Przewiń w dół",
+    "scrollDown": "Przewiń",
     "slides": {
       "0": "Szkic projektowy — wyposażenie sklepu tytoniowego",
       "1": "Szkic projektowy — regały sklepowe i lada przeszklona",
@@ -127,7 +127,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Skontaktuj się z nami — przygotujemy koncepcję i wycenę dopasowaną do Twojego projektu.",
+    "subtitle": "Jeśli chcesz porozmawiać o współpracy lub umówić spotkanie, napisz do nas — odpowiemy najszybciej, jak to możliwe.",
     "info": {
       "phone": "+48 796 694 327",
       "email": "info@drovar.pl",
