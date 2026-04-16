@@ -3,6 +3,12 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://drovar.pl";
 
 export default function robots(): MetadataRoute.Robots {
+  if (process.env.SITE_AUTH_BASIC) {
+    return {
+      rules: [{ userAgent: "*", disallow: "/" }],
+    };
+  }
+
   return {
     rules: [
       {

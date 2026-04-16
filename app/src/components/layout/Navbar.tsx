@@ -206,6 +206,27 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+
+          <div className="mx-auto mt-12 flex w-full max-w-xs items-center justify-center gap-1 border-t border-primary/10 pt-8 text-base font-bold">
+            {locales.map((loc, i) => (
+              <span key={loc} className="flex items-center gap-1">
+                {i > 0 && <span className="text-primary/30">|</span>}
+                {loc === locale ? (
+                  <span className="flex min-h-[44px] min-w-[44px] items-center justify-center px-4 text-accent">
+                    {loc.toUpperCase()}
+                  </span>
+                ) : (
+                  <Link
+                    href={switchLocalePath(loc)}
+                    onClick={() => setMenuOpen(false)}
+                    className="flex min-h-[44px] min-w-[44px] items-center justify-center px-4 text-primary transition-colors hover:text-accent"
+                  >
+                    {loc.toUpperCase()}
+                  </Link>
+                )}
+              </span>
+            ))}
+          </div>
         </div>
       )}
     </header>

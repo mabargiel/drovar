@@ -1,6 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import { LOCATIONS } from "@/lib/locations";
 
 export default function Footer() {
   const locale = useLocale();
@@ -72,7 +73,20 @@ export default function Footer() {
                   {tContact("email")}
                 </a>
               </li>
-              <li>{tContact("address")}</li>
+              {LOCATIONS.map((location) => (
+                <li key={location.key} className="pt-2">
+                  <span className="block text-xs font-bold uppercase tracking-wider text-accent">
+                    {tContact(`locations.${location.key}.label`)}
+                  </span>
+                  <address className="not-italic">
+                    {location.companyName}
+                    <br />
+                    {location.street}
+                    <br />
+                    {location.cityLine}
+                  </address>
+                </li>
+              ))}
             </ul>
           </div>
 

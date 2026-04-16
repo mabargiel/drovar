@@ -131,8 +131,17 @@
     "info": {
       "phone": "+48 796 694 327",
       "email": "info@drovar.pl",
-      "address": "Drovar Sp. z o.o.\nul. Sebastiana 12\n32-020 Wieliczka",
-      "nip": "USt-IdNr.: PL6832109118"
+      "nip": "USt-IdNr.: PL6832109118",
+      "locations": {
+        "headquarters": {
+          "label": "Sitz",
+          "mapAlt": "Karte des Drovar-Sitzes — ul. Sebastiana 12, Wieliczka"
+        },
+        "production": {
+          "label": "Büro, Lager, Produktion",
+          "mapAlt": "Karte von Büro, Lager und Produktion von Drovar — Polanka 287, Myślenice"
+        }
+      }
     },
     "form": {
       "name": "Name",

@@ -1,29 +1,29 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 import { MapPin } from "lucide-react";
 
-const GOOGLE_MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Drovar+ul.+Sebastiana+12+32-020+Wieliczka";
+type LocationMapProps = {
+  image: string;
+  alt: string;
+  mapsUrl: string;
+};
 
-export default function ContactMap() {
-  const t = useTranslations("contact.info");
-
+export default function LocationMap({ image, alt, mapsUrl }: LocationMapProps) {
   return (
     <a
-      href={GOOGLE_MAPS_URL}
+      href={mapsUrl}
       target="_blank"
       rel="noopener noreferrer"
       className="relative block overflow-hidden rounded-lg transition-opacity hover:opacity-90"
     >
       <Image
-        src="/images/map-wieliczka.png"
-        alt={t("address")}
+        src={image}
+        alt={alt}
         width={800}
         height={450}
         className="block w-full"
       />
       <MapPin
-        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full text-accent drop-shadow-md"
+        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full text-accent [filter:drop-shadow(0_2px_4px_rgba(0,0,0,0.3))]"
         size={40}
         strokeWidth={2}
       />

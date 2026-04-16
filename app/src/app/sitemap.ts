@@ -5,6 +5,10 @@ const BASE_URL = "https://drovar.pl";
 const LOCALES = ["en", "pl", "de", "it"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  if (process.env.SITE_AUTH_BASIC) {
+    return [];
+  }
+
   const realizations = await getAllRealizations();
 
   const staticRoutes = ["", "/contact", "/realizations"];
