@@ -25,7 +25,7 @@ export const LOCATIONS: readonly Location[] = [
     mapAltKey: "contact.info.locations.headquarters.mapAlt",
     companyName: "Drovar Sp. z o.o.",
     street: "ul. Sebastiana 12",
-    cityLine: "32-020 Wieliczka",
+    cityLine: "32-020 Wieliczka, Polska",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Drovar+ul.+Sebastiana+12+32-020+Wieliczka",
     mapImage: "/images/map-wieliczka.png",
