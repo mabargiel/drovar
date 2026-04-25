@@ -5,6 +5,7 @@
   },
   "nav": {
     "offer": "Services",
+    "projekty": "Designs",
     "realizations": "Projects",
     "about": "About",
     "contact": "Contact",
@@ -117,6 +118,20 @@
       "validation": { "nameRequired": "Name is required", "emailRequired": "Email is required", "emailInvalid": "Please enter a valid email address", "messageRequired": "Message is required" },
       "errors": { "rateLimited": "Too many requests. Please try again in a few minutes.", "serverError": "Failed to send your message. Please try again later." }
     }
+  },
+  "projekty": {
+    "title": "Designs",
+    "tabs": {
+      "modulowe": "Modular Furniture",
+      "kasowe": "Checkout Counters",
+      "bary": "Bars"
+    },
+    "descriptions": {
+      "modulowe": "Flexible display systems that grow with your store.",
+      "kasowe": "Checkout counters designed with ergonomics and aesthetics in mind.",
+      "bary": "Bar spaces crafted from the first sketch to the last detail."
+    },
+    "count": "{count} designs"
   },
   "categories": { "tobacco": "Tobacco shop" },
   "realizationDetail": { "backToList": "Back to projects", "gallery": "Gallery" },

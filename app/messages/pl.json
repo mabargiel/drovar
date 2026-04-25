@@ -5,6 +5,7 @@
   },
   "nav": {
     "offer": "Oferta",
+    "projekty": "Projekty",
     "realizations": "Realizacje",
     "about": "O nas",
     "contact": "Kontakt",
@@ -94,10 +95,10 @@
   },
   "realizations": {
     "title": "Nasze realizacje",
-    "subtitle": "Wybrane projekty sklepów wykonanych w Polsce i za granicą.",
+    "subtitle": "Wybrane projekty lokali handlowych wykonanych w Polsce i za granicą.",
     "viewAll": "Zobacz wszystkie realizacje",
     "pageTitle": "Realizacje",
-    "pageSubtitle": "Prezentujemy wybrane projekty sklepów wykonanych w Polsce i za granicą. Każdy projekt dopasowujemy do przestrzeni, potrzeb klienta oraz charakteru sprzedaży."
+    "pageSubtitle": "Prezentujemy wybrane projekty lokali handlowych wykonanych w Polsce i za granicą. Każdy projekt dopasowujemy do przestrzeni, potrzeb klienta oraz charakteru sprzedaży."
   },
   "projectTypes": {
     "title": "Realizujemy projekty dla",
@@ -114,15 +115,15 @@
   },
   "about": {
     "title": "O nas",
-    "paragraph1": "Specjalizujemy się w produkcji wyposażenia sklepów dostosowanego do indywidualnych potrzeb klientów. Stawiamy na funkcjonalność, estetykę oraz wysoką jakość wykonania.",
-    "paragraph2": "Realizujemy projekty dla małych punktów sprzedażowych oraz dużych powierzchni handlowych — w Polsce i za granicą. Dzięki wieloletniemu doświadczeniu dostarczamy rozwiązania, które pomagają sklepom lepiej działać i sprzedawać."
+    "paragraph1": "Specjalizujemy się w produkcji wyposażenia punktów handlowych dostosowanego do indywidualnych potrzeb klientów. Stawiamy na funkcjonalność, estetykę oraz wysoką jakość wykonania.",
+    "paragraph2": "Realizujemy projekty dla małych punktów sprzedażowych oraz dużych powierzchni handlowych — w Polsce i za granicą. Dzięki wieloletniemu doświadczeniu dostarczamy rozwiązania, które pomagają sklepom zwiększać efektywność sprzedaży."
   },
   "partners": {
     "title": "Nasi partnerzy"
   },
   "contactPreview": {
     "title": "Zainteresowany współpracą?",
-    "description": "Masz pomysł na nowy sklep lub planujesz modernizację istniejącego lokalu? Skontaktuj się z nami — przygotujemy koncepcję i wycenę dopasowaną do Twojego projektu.",
+    "description": "Masz pomysł na nowy punkt lub planujesz modernizację? Skontaktuj się z nami — przygotujemy koncepcję i wycenę dopasowaną do Twojego projektu.",
     "cta": "Skontaktuj się z nami"
   },
   "contact": {
@@ -181,6 +182,20 @@
       }
     }
   },
+  "projekty": {
+    "title": "Projekty",
+    "tabs": {
+      "modulowe": "Meble modułowe",
+      "kasowe": "Meble kasowe",
+      "bary": "Bary"
+    },
+    "descriptions": {
+      "modulowe": "Elastyczne systemy ekspozycji, które rosną razem z Twoim sklepem.",
+      "kasowe": "Stanowiska kasowe zaprojektowane z myślą o ergonomii i estetyce.",
+      "bary": "Przestrzenie barowe tworzone od pierwszego szkicu do ostatniego detalu."
+    },
+    "count": "{count} projektów"
+  },
   "categories": {
     "tobacco": "Sklep tytoniowy"
   },
@@ -189,7 +204,7 @@
     "gallery": "Galeria"
   },
   "footer": {
-    "description": "Projektujemy i produkujemy nowoczesne wyposażenie sklepów.",
+    "description": "Projektujemy i produkujemy nowoczesne wyposażenie punktów handlowych.",
     "navigation": "Nawigacja",
     "contactTitle": "Kontakt",
     "partnersTitle": "Partnerzy",

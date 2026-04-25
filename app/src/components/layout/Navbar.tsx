@@ -15,6 +15,7 @@ type NavLink =
 
 const navLinks: NavLink[] = [
   { label: "Home", path: "", scroll: false },
+  { key: "projekty", path: "/projekty", scroll: false },
   { key: "realizations", path: "/realizations", scroll: false },
   { key: "about", path: "/#about", scroll: true },
   { key: "contact", path: "/contact", scroll: false },

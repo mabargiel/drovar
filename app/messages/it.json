@@ -5,6 +5,7 @@
   },
   "nav": {
     "offer": "Offerta",
+    "projekty": "Progetti",
     "realizations": "Realizzazioni",
     "about": "Chi siamo",
     "contact": "Contatti",
@@ -117,6 +118,20 @@
       "validation": { "nameRequired": "Il nome è obbligatorio", "emailRequired": "L'email è obbligatoria", "emailInvalid": "Inserisca un indirizzo email valido", "messageRequired": "Il messaggio è obbligatorio" },
       "errors": { "rateLimited": "Troppe richieste. Riprovi tra qualche minuto.", "serverError": "Invio del messaggio non riuscito. Riprovi più tardi." }
     }
+  },
+  "projekty": {
+    "title": "Progetti",
+    "tabs": {
+      "modulowe": "Mobili Modulari",
+      "kasowe": "Banchi Cassa",
+      "bary": "Bar"
+    },
+    "descriptions": {
+      "modulowe": "Sistemi espositivi flessibili che crescono con il tuo negozio.",
+      "kasowe": "Banconi cassa progettati con attenzione all'ergonomia e all'estetica.",
+      "bary": "Spazi bar creati dal primo schizzo all'ultimo dettaglio."
+    },
+    "count": "{count} progetti"
   },
   "categories": { "tobacco": "Tabaccheria" },
   "realizationDetail": { "backToList": "Torna alle realizzazioni", "gallery": "Galleria" },

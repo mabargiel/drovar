@@ -5,6 +5,7 @@
   },
   "nav": {
     "offer": "Angebot",
+    "projekty": "Entwürfe",
     "realizations": "Referenzen",
     "about": "Über uns",
     "contact": "Kontakt",
@@ -180,6 +181,20 @@
         "serverError": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
       }
     }
+  },
+  "projekty": {
+    "title": "Entwürfe",
+    "tabs": {
+      "modulowe": "Modulare Möbel",
+      "kasowe": "Kassentheken",
+      "bary": "Bars"
+    },
+    "descriptions": {
+      "modulowe": "Flexible Präsentationssysteme, die mit Ihrem Geschäft wachsen.",
+      "kasowe": "Kassentheken entworfen mit Blick auf Ergonomie und Ästhetik.",
+      "bary": "Barbereiche – vom ersten Entwurf bis zum letzten Detail."
+    },
+    "count": "{count} Entwürfe"
   },
   "categories": {
     "tobacco": "Tabakgeschäft"

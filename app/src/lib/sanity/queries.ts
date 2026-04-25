@@ -1,5 +1,24 @@
 import { sanityClient } from "./client";
 
+export type ProjektSketch = {
+  _id: string;
+  category: "modulowe" | "kasowe" | "bary";
+  image: {
+    _type: "image";
+    asset: {
+      _ref: string;
+      url: string;
+      metadata: {
+        dimensions: {
+          width: number;
+          height: number;
+        };
+      };
+    };
+  };
+  order: number;
+};
+
 export type SanityRealization = {
   _id: string;
   title: string;
@@ -68,5 +87,23 @@ export async function getRealizationBySlug(
   return sanityClient.fetch(
     `*[_type == "realization" && slug.current == $slug][0] { ${realizationDetailFields} }`,
     { slug },
+  );
+}
+
+export async function getAllProjektSketches(): Promise<ProjektSketch[]> {
+  return sanityClient.fetch(
+    `*[_type == "projektSketch"] | order(category asc, order asc) {
+      _id,
+      category,
+      image {
+        _type,
+        asset-> {
+          "_ref": _id,
+          url,
+          metadata { dimensions { width, height } }
+        }
+      },
+      order
+    }`,
   );
 }
